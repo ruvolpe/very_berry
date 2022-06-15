@@ -1,0 +1,22 @@
+.pokemon__image {
+    background-position: center;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin: 0 auto;
+    width: 300px;
+    
+}
+
+.pokemon__image--bulbassaur {
+    background-image: url(../../img/pokemons/bulbassaur.jpg)
+}
+
+.pokemon__image--charmander {
+    background-image: url(../../img/pokemons/charmander.jpg)
+}
+
+.pokemon__image--squirtle {
+    background-image: url(../../img/pokemons/squirtle.jpg)
+}

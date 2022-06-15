@@ -1,7 +1,35 @@
-header {
+.header {
     align-items: center;
     background: #BFD7EA;
     display: flex;
     justify-content: space-between;
     padding: 0 2rem;
+}
+
+.skipToMainContent, .skipToMainContent:active, .skipToMainContent:focus, .skipToMainContent:hover {
+    text-indent: 100%;
+    white-space : nowrap;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    display: block;
+    color: transparent;
+    position: absolute;
+}
+
+
+@media screen and (min-width: 0px) {
+    .header  {
+        justify-content: center;
+        padding: 0 1rem;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    .header  {
+        justify-content: space-between;
+        padding: 0 5rem;
+    }
+    
 }

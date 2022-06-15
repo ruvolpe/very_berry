@@ -1,0 +1,13 @@
+.berry__button {
+    background: #087e8b;
+    border: none;
+    border-radius: 5px;
+    color: #fdfdfd;
+    padding: 0.75rem;
+    transition: all .1s ease-in-out;
+}
+
+.berry__button:hover {
+    background: #0b3954;
+    cursor: pointer;
+}

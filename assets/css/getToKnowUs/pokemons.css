@@ -1,0 +1,17 @@
+.pokemons {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3rem;
+}
+
+@media screen and (min-width: 0px) {
+    .pokemons {
+        flex-direction: column;
+    }   
+}
+
+@media screen and (min-width: 768px) {
+    .pokemons {
+       flex-direction: row;
+    }
+}

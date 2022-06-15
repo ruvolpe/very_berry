@@ -8,47 +8,58 @@
         <title>Very Berry</title>
         <link href="./assets/css/normalize.css" rel="stylesheet" />
         <link href="./assets/css/reset.css" rel="stylesheet" />
-        <link rel="stylesheet" href="assets/css/header.css">
-        <link rel="stylesheet" href="assets/css/menu/menu.css">
-        <link rel="stylesheet" href="assets/css/menu/menu__list.css">
-        <link rel="stylesheet" href="assets/css/menu/menu__item.css">
-        <link rel="stylesheet" href="assets/css/menu/menu__link.css">
-        <link rel="stylesheet" href="assets/css/banner/banner.css">
-        <link rel="stylesheet" href="assets/css/banner/banner-image.css">
-        <link rel="stylesheet" href="assets/css/banner/banner-title.css">
         <link rel="stylesheet" href="assets/css/about/about.css">
-        <link rel="stylesheet" href="assets/css/about/about__title.css">
         <link rel="stylesheet" href="assets/css/about/about__description.css">
+        <link rel="stylesheet" href="assets/css/about/about__title.css">
+        <link rel="stylesheet" href="assets/css/banner/banner.css">
+        <link rel="stylesheet" href="assets/css/banner/banner__image.css">
+        <link rel="stylesheet" href="assets/css/banner/banner__title.css">
         <link rel="stylesheet" href="assets/css/berries/berries.css">
         <link rel="stylesheet" href="assets/css/berries/berries_content.css">
         <link rel="stylesheet" href="assets/css/berries/berry.css">
         <link rel="stylesheet" href="assets/css/berries/berry__button.css">
+        <link rel="stylesheet" href="assets/css/berries/berries__content.css">
         <link rel="stylesheet" href="assets/css/berries/berry__description.css">
         <link rel="stylesheet" href="assets/css/berries/berry__image.css">
         <link rel="stylesheet" href="assets/css/berries/berry__title.css">
-        <link rel="stylesheet" href="assets/css/berries/berries_content.css">
+        <link rel="stylesheet" href="assets/css/getToKnowUs/getToKnowUs.css">
+        <link rel="stylesheet" href="assets/css/getToKnowUs/getToKnowUs__description.css">
+        <link rel="stylesheet" href="assets/css/getToKnowUs/getToKnowUs__title.css">
+        <link rel="stylesheet" href="assets/css/getToKnowUs/pokemon.css">
+        <link rel="stylesheet" href="assets/css/getToKnowUs/pokemon__image.css">
+        <link rel="stylesheet" href="assets/css/getToKnowUs/pokemon__name.css">
+        <link rel="stylesheet" href="assets/css/getToKnowUs/pokemon__role.css">
+        <link rel="stylesheet" href="assets/css/getToKnowUs/pokemons.css">
+        <link rel="stylesheet" href="assets/css/header.css">
+        <link rel="stylesheet" href="assets/css/footer.css">
+        <link rel="stylesheet" href="assets/css/menu/menu.css">
+        <link rel="stylesheet" href="assets/css/menu/menu__item.css">
+        <link rel="stylesheet" href="assets/css/menu/menu__link.css">
+        <link rel="stylesheet" href="assets/css/menu/menu__list.css">
+        <link rel="stylesheet" href="assets/css/menu/logo.css">
     </head>
     <body>
-        <header>
+        <a href="#mainContent" class="skipToMainContent">Skip to main content</a>
+        
+        <header class="header">
             <img src="assets/img/logo.png" alt="very berry" class="logo">
             <nav class="menu">
                 <ul class="menu__list">
-                    <li class="menu__item"><a href="#" class="menu__link active">Home</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Recipes</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Get to know us</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Community</a></li>
+                    <li class="menu__item"><a href="#home" class="menu__link active">Home</a></li>
+                    <li class="menu__item"><a href="#berries" class="menu__link">Berries</a></li>
+                    <li class="menu__item"><a href="#getToKnowUs" class="menu__link">Get to know us</a></li>
                 </ul>
             </nav>
         </header>
-        <section class="banner">
+        <section class="banner" id="home">
             <img src="assets/img/banner.jpg" alt="happy pokemons" class="banner__image">
-            <h2 class="banner__title">Know your berries!</h2>
+            <h2 class="banner__title" id="mainContent">Know your berries!</h2>
         </section>
         <section class="about">
             <h2 class="about__title">Berries are there to be used</h2>
             <p class="about__description">You can recover your pokemons from different status and really improve your battle skills.</p>
         </section>
-        <section class="berries">
+        <section class="berries" id="berries">
                 <div class="berry">
                     <img alt="Aspear Berry" class="berry__image" src="./assets/img/berries/aspear-berry.jpg" />
                     <div class="berries__content">
@@ -98,5 +109,29 @@
                     </div>
                 </div>
             </section>
+            <section class="getToKnowUs">
+                <h3 class="getToKnowUs__title" id="getToKnowUs">Get to know us</h3>
+                <p class="getToKnowUs__description">These are the pokemons who created Very Berry</p>
+                <div class="pokemons">
+                    <div class="pokemon">
+                        <div class="pokemon__image pokemon__image--bulbassaur"></div>
+                        <span class="pokemon__name">Bulbassaur</span>
+                        <span class="pokemon__role">Farmer</span>
+                    </div>
+                     <div class="pokemon">
+                        <div class="pokemon__image pokemon__image--charmander"></div>
+                        <span class="pokemon__name">Charmander</span>
+                        <span class="pokemon__role">Content creator</span>
+                    </div>
+                    <div class="pokemon">
+                        <div class="pokemon__image pokemon__image--squirtle"></div>
+                        <span class="pokemon__name">Squirtle</span>
+                        <span class="pokemon__role">Cuisine Chef</span>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                Get in touch: very_berry@pokemon.com
+            </footer>
     </body>
 </html>
